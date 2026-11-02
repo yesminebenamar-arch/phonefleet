@@ -1,0 +1,10 @@
+# Communication SSH/SFTP avec le Fairphone
+paramiko>=3.0
+
+# Traitement signal / IA (côté PC)
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# Entraînement (optionnel, côté PC uniquement)
+openpyxl>=3.1
