@@ -1,0 +1,18 @@
+# Fichiers generes par Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Dossiers de compilation PlatformIO
+.pio/
+
+# Donnees et journaux
+*.wav
+*.npz
+*.log
+
+# Fichiers sensibles ou locaux
+.env
+.env.backup
+.pfe_mission.json
+.DS_Store
