@@ -128,12 +128,12 @@ If you really need both plugged in at the same time, choose the port by hand:
 
 ## If something goes wrong
 
-| What you see | What it means | What to do |
+ What you see | What it means | What to do |
 |--------------|---------------|------------|
-| `LoRa init failed -> check the wiring` | The board can't talk to the LoRa module | Check that **RX↔TX are crossed**, and that VCC is on 5V and GND on GND |
-| Upload error: `can't open device` / `access denied` | The port is busy | Close the **Serial Monitor** (`Ctrl+C`) or any other program using the board, then upload again |
-| Upload error: `no device found` / timeout | The PC doesn't see the board | Try another USB cable or port. Some cables only give power, not data |
-| Sender says `Sent: ...` but the Receiver shows nothing | Radio problem | Check both boards are powered and wired the same way. Put them 1 m apart to start |
-| Strange characters on the Serial Monitor | Wrong speed | The speed must be **115200** (already set in `platformio.ini`); close and reopen the monitor |
-| Red underlines in VS Code (`cannot open source file "Arduino.h"`) | You opened the wrong folder | Open the **`Sender`** or **`Receiver`** folder itself, not the whole project. The code is fine |
-| The first build is very slow | PlatformIO is downloading the tools | Normal the first time only. Wait |
+ `LoRa init failed -> check the wiring` | The board can't talk to the LoRa module | Check that **RX↔TX are crossed**, and that VCC is on 5V and GND on GND |
+ Upload error: `can't open device` / `access denied` | The port is busy | Close the **Serial Monitor** (`Ctrl+C`) or any other program using the board, then upload again |
+ Upload error: `no device found` / timeout | The PC doesn't see the board | Try another USB cable or port. Some cables only give power, not data |
+ Sender says `Sent: ...` but the Receiver shows nothing | Radio problem | Check both boards are powered and wired the same way. Put them 1 m apart to start |
+ Strange characters on the Serial Monitor | Wrong speed | The speed must be **115200** (already set in `platformio.ini`); close and reopen the monitor |
+ Red underlines in VS Code (`cannot open source file "Arduino.h"`) | You opened the wrong folder | Open the **`Sender`** or **`Receiver`** folder itself, not the whole project. The code is fine |
+ The first build is very slow | PlatformIO is downloading the tools | Normal the first time only. Wait |
